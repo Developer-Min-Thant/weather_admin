@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "420036700517",
+    "project_id": "weather-e2c1f",
+    "storage_bucket": "weather-e2c1f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:420036700517:android:2741f4c446c0e2826c598c",
+        "android_client_info": {
+          "package_name": "com.example.weather"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "420036700517-atth4uglsh895hcs3hnh4t33si3e97c4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBatohUuKe8oxbfgYFleSyG-4TlafLT3ps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "420036700517-atth4uglsh895hcs3hnh4t33si3e97c4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "420036700517-2gc4d2ctafo8vj5kc3uhnsc877e4i1di.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.min.weatherApp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:420036700517:android:158ae05cb99260a06c598c",
+        "android_client_info": {
+          "package_name": "com.example.weather_admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "420036700517-atth4uglsh895hcs3hnh4t33si3e97c4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBatohUuKe8oxbfgYFleSyG-4TlafLT3ps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "420036700517-atth4uglsh895hcs3hnh4t33si3e97c4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "420036700517-2gc4d2ctafo8vj5kc3uhnsc877e4i1di.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.min.weatherApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
