@@ -16,11 +16,13 @@ class SendNotificationScreen extends StatefulWidget {
 class _SendNotificationScreenState extends State<SendNotificationScreen> {
   late final TextEditingController title;
   late final TextEditingController body;
+  late final TextEditingController token;
 
   @override
   void initState() {
     title = TextEditingController();
     body = TextEditingController();
+    token = TextEditingController();
     super.initState();
   }
 
@@ -77,6 +79,27 @@ class _SendNotificationScreenState extends State<SendNotificationScreen> {
                   maxLines: 3,
                 ),
               ),
+
+              Padding(
+                padding: const EdgeInsets.only(bottom: 20.0),
+                child: TextFormField(
+                  key: UniqueKey(),
+                  keyboardType: TextInputType.text,
+                  controller: token,
+                  decoration: InputDecoration(
+                    labelText: 'Enter FCM Token',
+                    hintText: 'FCM Token',
+                    border: OutlineInputBorder(
+                      borderSide: const BorderSide(
+                        width: 1,
+                        color: Colors.white,
+                      ),
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                  ),
+                  maxLines: 3,
+                ),
+              ),
   
               Padding(
                 padding: const EdgeInsets.all(20.0),
@@ -86,10 +109,11 @@ class _SendNotificationScreenState extends State<SendNotificationScreen> {
                         onPressed: () {
                           String titleText = title.text.trim();
                           String bodyText = body.text.trim();
+                          String tokenText = token.text.trim();
 
-                          if(titleText != "" && bodyText != "") {
+                          if(titleText != "" && bodyText != "" && tokenText != "") {
                             sendPushMessage(
-                              'dhrQv2p-SfmO7sj66DOsCQ:APA91bFW3gkg2BfBjkbVm-q0E9lRw6CsoSnHTx8rVCeoN4Utdya7wksq_ArQ-PP2G77I-bnC3wgxPc8eBWOhOkaUpuw6jn5E5DwBjT2dfyh3IxpwsduI3zE4VWu8QZ6HOFZsChA7lg09',
+                              tokenText,
                               titleText, 
                               bodyText);
                             ScaffoldMessenger.of(context).showSnackBar(
